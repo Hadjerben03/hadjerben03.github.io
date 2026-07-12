@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hadjer Benabdallah — Portfolio</title>
+
+<meta name="description" content="Portfolio of Hadjer Benabdallah — Computer Science student, UI/UX designer, and full-stack developer. Explore CS projects, UI/UX case work, and full-stack applications.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hadjer Benabdallah — Portfolio">
+<meta property="og:description" content="Computer Science student, UI/UX designer, and full-stack developer — I turn ideas into clean, user-centered digital experiences.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hadjer Benabdallah — Portfolio">
+<meta name="twitter:description" content="Computer Science student, UI/UX designer, and full-stack developer.">
+<meta name="twitter:image" content="og-image.png">
+
+<!-- Favicon -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="favicon-180.png">
+
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="logo">Hadjer<span>.</span></div>
+    <div class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="eyebrow-pill"><span class="dot"></span>Available for opportunities</div>
+    <h1>Hi, I'm Hadjer<br><span class="accent">I design and build digital products.</span></h1>
+    <p class="hero-desc">Computer Science student, UI/UX designer, and full-stack developer — I turn ideas into clean, user-centered digital experiences, from the first wireframe to the deployed product.</p>
+    <div class="cta-row">
+      <a href="#projects" class="btn btn-primary">View Projects →</a>
+      <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-head">
+      <div class="eyebrow">About</div>
+      <h2>A little about me</h2>
+    </div>
+    <p class="about-intro">I'm a <strong>Computer Science student</strong>, <strong>UI/UX designer</strong>, and <strong>full-stack web developer</strong> passionate about transforming ideas into modern, user-centered digital solutions. From wireframes and interactive prototypes to responsive web applications, I focus on creating products that are visually appealing, accessible, and performance-driven. I enjoy combining clean, intuitive design with functional development to deliver engaging digital experiences — continuously learning new technologies and refining my skills as I grow as both a designer and developer.</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon">🎓</div>
+        <div class="pillar-title">CS Student</div>
+        <div class="pillar-text">Master's student at USTHB, building a strong foundation in algorithms, databases, and software systems.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">🎨</div>
+        <div class="pillar-title">UI/UX Designer</div>
+        <div class="pillar-text">From wireframes to interactive prototypes — I design with the user's experience at the center of every decision.</div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">💻</div>
+        <div class="pillar-title">Full-Stack Developer</div>
+        <div class="pillar-text">I bring designs to life with React, Node.js, and PostgreSQL — clean code, real performance.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-head">
+      <div class="eyebrow">Projects</div>
+      <h2>What I've built</h2>
+      <p class="section-sub">A selection of my computer science work, UI/UX designs, and full-stack products.</p>
+    </div>
+
+    <div class="project-group">
+      <div class="project-group-head">
+        <div class="eyebrow">Computer Science Projects</div>
+        <h3 class="project-group-title">Academic and technical projects</h3>
+        <p class="project-group-desc">Algorithms, databases, software engineering, and university projects from my computer science path.</p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-title">Bone Age Detection with VGG16</div>
+          <div class="project-tag">Computer Science</div>
+        </div>
+        <p class="project-desc">A deep learning model that predicts a patient's bone age from hand X-ray images, built on a pre-trained VGG16 network combined with patient metadata (sex). Developed as my Bachelor's degree final project, with an iterative methodology of progressive fine-tuning and hyperparameter optimization across the full 12,564-image dataset.</p>
+
+        <div class="meta-row">
+          <div class="meta-block">
+            <div class="meta-label">My Role</div>
+            <div class="meta-val">Computer Science Student — Model Design &amp; Training</div>
+          </div>
+        </div>
+
+        <div class="tech-row">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">TensorFlow / Keras</span>
+          <span class="tech-pill">VGG16 (Transfer Learning)</span>
+          <span class="tech-pill">Computer Vision</span>
+          <span class="tech-pill">Deep Learning</span>
+        </div>
+
+        <ul class="highlights">
+          <li>Preprocessed X-ray images (RGB conversion, normalization, resizing to 224x224) and integrated patient sex as an auxiliary input</li>
+          <li>Trained progressively: started with a frozen VGG16 base, then fine-tuned upper layers to adapt to medical imaging data</li>
+          <li>Optimized architecture and hyperparameters (batch size, learning rate, Dense layers with BatchNormalization and Dropout, EarlyStopping)</li>
+          <li>Reduced validation MAE from 31.8 to 11.02 through iterative experimentation on the full 12,564-image dataset</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-title">Simplified MPEG-4 Video Encoder Pipeline</div>
+          <div class="project-tag">Computer Science</div>
+        </div>
+        <p class="project-desc">A complete implementation of a simplified MPEG-4-like video encoder pipeline in Python, from raw image frames to a compressed binary file that can be decoded back into images. The project covers the five key stages of a video codec: pre-processing, intra-frame (I-frame) coding, inter-frame (P-frame) coding, entropy coding, and evaluation.</p>
+
+        <div class="meta-row">
+          <div class="meta-block">
+            <div class="meta-label">My Role</div>
+            <div class="meta-val">Computer Science Student</div>
+          </div>
+        </div>
+
+        <div class="tech-row">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Video Compression</span>
+          <span class="tech-pill">DCT</span>
+          <span class="tech-pill">Motion Estimation</span>
+          <span class="tech-pill">Matplotlib</span>
+        </div>
+
+        <ul class="highlights">
+          <li>Implemented pre-processing with BGR → YCbCr color space conversion and chroma subsampling</li>
+          <li>Built intra-frame (I-frame) coding using DCT-based spatial compression</li>
+          <li>Built inter-frame (P-frame) coding with motion estimation and residual coding</li>
+          <li>Added lossless entropy coding for the final bitstream, plus PSNR-based quality evaluation and pipeline visualisation</li>
+          <li>Made GOP size, quantisation factor, and motion search window fully configurable</li>
+        </ul>
+
+        <div class="links-row">
+          <a href="https://github.com/Hadjerben03/projet-Multimedia/tree/main" class="link-pill">GitHub</a>
+        </div>
+      </div>
+
+      <div class="add-project">
+        + Send me your computer science project details and I'll add them here.
+      </div>
+    </div>
+
+    <div class="project-group">
+      <div class="project-group-head">
+        <div class="eyebrow">UI/UX Design</div>
+        <h3 class="project-group-title">Interfaces and product experiences</h3>
+        <p class="project-group-desc">Design projects focused on research, user flows, wireframes, prototypes, and polished visual interfaces.</p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-title">ProScan — Business Card Scanner App</div>
+          <div class="project-tag">UI/UX Design</div>
+        </div>
+        <p class="project-desc">A mobile app concept that lets users scan business cards and QR codes and instantly turn them into organized digital contacts — stop losing business cards, and keep your pockets light. Designed the full flow from onboarding and authentication to scanning, contact management, and settings.</p>
+
+        <div class="meta-row">
+          <div class="meta-block">
+            <div class="meta-label">My Role</div>
+            <div class="meta-val">UI/UX Designer</div>
+          </div>
+        </div>
+
+        <div class="tech-row">
+          <span class="tech-pill">Figma</span>
+          <span class="tech-pill">Wireframes</span>
+          <span class="tech-pill">Prototype</span>
+          <span class="tech-pill">User Flow</span>
+          <span class="tech-pill">Visual Design</span>
+        </div>
+
+        <ul class="highlights">
+          <li>Designed onboarding and authentication flows (Sign In / Sign Up, social login)</li>
+          <li>Built the card &amp; QR code scanning flow with real-time capture feedback</li>
+          <li>Designed the contact detail screen with editable info, tags, and notes</li>
+          <li>Created the contacts list with alphabetical index and search, plus a document library and settings screens</li>
+        </ul>
+
+        <div class="shot-grid">
+          <img src="images/proscan-1.png" alt="ProScan — Welcome and Get Started screens" loading="lazy">
+          <img src="images/proscan-2.png" alt="ProScan — Sign In and QR scan screens" loading="lazy">
+          <img src="images/proscan-3.png" alt="ProScan — Contact detail and contacts list screens" loading="lazy">
+          <img src="images/proscan-4.png" alt="ProScan — Settings and All Documents screens" loading="lazy">
+        </div>
+
+        <div class="links-row">
+          <a href="https://www.figma.com/design/nNPpdaovkEwjxTJOTrGtvs/scanner-app?node-id=0-1&t=JIUu2aeKbNNB1z2m-1" class="link-pill">Figma Design</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-title">Ténéré Tourisme — Tourism App</div>
+          <div class="project-tag">UI/UX Design</div>
+        </div>
+        <p class="project-desc">A multi-role tourism app for exploring Algeria, from the heart of the desert to the waves of the coast. Designed distinct experiences for tourists, historians, tourism agencies, investors, and e-commerce sellers, covering authentication, discovery, bookings, an in-app marketplace, and profile management.</p>
+
+        <div class="meta-row">
+          <div class="meta-block">
+            <div class="meta-label">My Role</div>
+            <div class="meta-val">UI/UX Designer</div>
+          </div>
+        </div>
+
+        <div class="tech-row">
+          <span class="tech-pill">Figma</span>
+          <span class="tech-pill">Wireframes</span>
+          <span class="tech-pill">Prototype</span>
+          <span class="tech-pill">User Flow</span>
+          <span class="tech-pill">Visual Design</span>
+        </div>
+
+        <ul class="highlights">
+          <li>Designed role-based onboarding and authentication (Tourist, Historian, Tourism Agency, Investor, E-commerce)</li>
+          <li>Built a historical/cultural discovery flow with topics, site details, and liked-topics history</li>
+          <li>Designed a tourist experience covering hotels, restaurants, transport, activities, and an interactive map with ticket booking</li>
+          <li>Designed an in-app e-commerce flow for sellers: analytics dashboard, product listings, checkout, and order management</li>
+          <li>Built profile and account settings screens, including edit-profile and app preferences</li>
+        </ul>
+
+        <div class="shot-grid">
+          <img src="images/tenere-auth.png" alt="Ténéré Tourisme — Authentication flow" loading="lazy">
+          <img src="images/tenere-tourist.png" alt="Ténéré Tourisme — Tourist home, hotels, restaurants and map" loading="lazy">
+          <img src="images/tenere-historien.png" alt="Ténéré Tourisme — Historical sites discovery" loading="lazy">
+          <img src="images/tenere-ecommerce.png" alt="Ténéré Tourisme — E-commerce seller dashboard and orders" loading="lazy">
+          <img src="images/tenere-profile.png" alt="Ténéré Tourisme — Profile and settings" loading="lazy">
+        </div>
+
+        <div class="links-row">
+          <a href="https://www.figma.com/design/IzNX3k47XOJxDRIRazcAIs/T%C3%A9n%C3%A9r%C3%A9_design?node-id=0-1&t=rpZi8DgZAXJzmpNg-1" class="link-pill">Figma Design</a>
+        </div>
+      </div>
+
+      <div class="add-project">
+        + Send me your UI/UX design links, screenshots, or case studies and I'll add them here.
+      </div>
+    </div>
+
+    <div class="project-group">
+      <div class="project-group-head">
+        <div class="eyebrow">Full-Stack Projects</div>
+        <h3 class="project-group-title">Web applications built end to end</h3>
+        <p class="project-group-desc">Complete products where I worked across the interface, backend, database, and deployment-ready experience.</p>
+      </div>
+
+    <div class="project-card">
+      <div class="project-top">
+        <div class="project-title">Arcontech</div>
+        <div class="project-tag">Full-Stack</div>
+      </div>
+      <p class="project-desc">A full-stack web application designed and developed as a complete digital product, from the user interface to the application logic.</p>
+
+      <div class="meta-row">
+        <div class="meta-block">
+          <div class="meta-label">My Role</div>
+          <div class="meta-val">UI/UX Designer &amp; Full-Stack Developer</div>
+        </div>
+      </div>
+
+      <div class="tech-row">
+        <span class="tech-pill">Figma</span>
+        <span class="tech-pill">React</span>
+        <span class="tech-pill">Node.js</span>
+        <span class="tech-pill">Express</span>
+        <span class="tech-pill">PostgreSQL</span>
+      </div>
+
+      <ul class="highlights">
+        <li>Designed a clean and user-centered interface</li>
+        <li>Developed a responsive web application</li>
+        <li>Built backend features and connected the database</li>
+        <li>Structured the project for maintainability and growth</li>
+      </ul>
+
+      <div class="links-row">
+        <a href="#" class="link-pill">🌐 Live Demo</a>
+        <a href="https://www.figma.com/design/GUJZUAwWOwx8vnAbLD62aG/Archontech?node-id=0-1&t=zybz8GNTmvaXboat-1" class="link-pill">🎨 Figma Design</a>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <div class="section-head">
+      <div class="eyebrow">Certificates</div>
+      <h2>Courses &amp; achievements</h2>
+      <p class="section-sub">Programs, courses, and events I've completed or participated in.</p>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <img src="images/certs/cert-experia-hackathon.png" alt="Experia Hackathon — Certificate of Participation" loading="lazy">
+        <div class="cert-info">
+          <div class="cert-title">Experia Hackathon</div>
+          <div class="cert-issuer">Open Minds Club, USTHB</div>
+          <div class="cert-date">February 2025</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <img src="images/certs/cert-microcode.png" alt="Micro Code — Certificate of Participating" loading="lazy">
+        <div class="cert-info">
+          <div class="cert-title">Micro Code Event</div>
+          <div class="cert-issuer">Micro Club, USTHB</div>
+          <div class="cert-date">December 2024</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <img src="images/certs/cert-growth-knowledge.png" alt="Growth - Knowledge program certificate" loading="lazy">
+        <div class="cert-info">
+          <div class="cert-title">Growth – Knowledge Program</div>
+          <div class="cert-issuer">INJAZ El Djazair &amp; Société Générale Algérie</div>
+          <div class="cert-date">November 2024</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <img src="images/certs/cert-brainerx-python.png" alt="BrainerX — Python for beginners certificate" loading="lazy">
+        <div class="cert-info">
+          <div class="cert-title">Programmation pour les débutants avec Python</div>
+          <div class="cert-issuer">BrainerX</div>
+          <div class="cert-date">August 2024</div>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <img src="images/certs/cert-cabes-algorithms.png" alt="Cabes — Algorithms and C programming language certificate" loading="lazy">
+        <div class="cert-info">
+          <div class="cert-title">Algorithms &amp; C Programming Language</div>
+          <div class="cert-issuer">Cabes School</div>
+          <div class="cert-date">September 2022</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-panel">
+      <div class="eyebrow" style="text-align:center;">Contact</div>
+      <h2>Let's work together</h2>
+      <p>Open to full-stack and UI/UX opportunities, freelance projects, and collaborations. I'd love to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:benhadjer223@gmail.com" class="contact-pill">✉️ Email</a>
+        <a href="https://www.linkedin.com/in/hadjer-benabdallah-45b2a1192/" class="contact-pill">💼 LinkedIn</a>
+        <a href="https://github.com/Hadjerben03" class="contact-pill">💻 GitHub</a>
+        <a href="https://www.instagram.com/hadjersdesign/" class="contact-pill">📷 Instagram</a>
+        <a href="https://x.com/HadjerBenabdalh" class="contact-pill">𝕏 Twitter</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2026 Hadjer Benabdallah — Designed &amp; built with care.</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
